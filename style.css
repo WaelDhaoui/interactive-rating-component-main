@@ -1,0 +1,138 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Overpass', sans-serif;
+}
+img {
+    width: 100%;
+    height: 100%;
+}
+ul {
+    list-style: none;
+}
+body {
+    background-color: hsl(216, 12%, 8%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    position: relative;
+}
+header {
+    background-color: hsl(213, 19%, 18%);
+    width: 350px;
+    min-height: 300px;
+    position: relative;
+    border-radius: 42px;
+    padding: 2%;
+    overflow: hidden;
+}
+@media (max-width: 767px) {
+    header {
+        width: 320px;
+        min-height: 300px;
+        border-radius: 17px;
+        padding: 6%;
+    }
+}
+.rate {
+    position: relative;
+    transition: .3s;
+}
+.rate .img {
+    width: 10%;
+    padding: 2% 3%;
+    background-color: hsl(213deg 14% 23%);
+    border-radius: 50%;
+}
+.rate h4 {
+    color: hsl(0, 0%, 100%);
+    font-size: 22px;
+    margin: 6% 0 1%;
+}
+.rate p {
+    color: hsl(217, 12%, 63%);
+    margin: 3% 0;
+    font-size: 13px;
+    line-height: 1.4;
+}
+@media (max-width: 767px) {
+    .rate p {
+        font-size: 14px;
+        line-height: 1.4;
+    }
+}
+.rate ul {
+    display: flex;
+    justify-content: space-around;
+    margin: 4% 0;
+}
+.rate li {
+    background-color: hsl(213deg 15% 22%);
+    color: hsl(217deg 7% 43%);
+    padding: 4% 5%;
+    font-size: 13px;
+    border-radius: 50%;
+    font-weight: 600;
+    cursor: pointer;
+    transition: .3s;
+}
+.rate li:hover {
+    background-color: #7c8898;
+    color: hsl(0, 0%, 100%);
+}
+.rate button {
+    width: 100%;
+    border: none;
+    border-radius: 28px;
+    padding: 4% 0;
+    cursor: pointer;
+    background-color: hsl(25, 97%, 53%);
+    color: hsl(0, 0%, 100%);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 4%;
+}
+.thanks {
+    position: relative;
+    display: none;
+    transition: .3s;
+}
+.thanks .img {
+    width: 46%;
+    margin: 0 auto;
+}
+.thanks p {
+    width: fit-content;
+    margin: 7% auto;
+    color: hsl(25deg 97% 53% / 79%);
+    background-color: hsl(213deg 15% 22%);
+    padding: 3% 5% 2%;
+    border-radius: 24px;
+    font-size: 12px;
+}
+.thanks h4 {
+    color: hsl(0, 0%, 100%);
+    font-size: 22px;
+    margin: 6% 0 1%;
+    text-align: center;
+}
+.thanks p:last-of-type {
+    color: hsl(217deg 12% 63% / 77%);
+    margin: 3% 0;
+    font-size: 12.69px;
+    text-align: center;
+    padding: 0;
+    background-color: transparent;
+    line-height: 1.5;
+}
+footer { 
+    font-size: 11px; text-align: center; 
+    position: absolute;
+    bottom: 3%;
+    color: hsl(217deg 12% 63% / 77%);
+}
+footer a {
+    color: hsla(25, 97%, 53%, 0.849); 
+}
